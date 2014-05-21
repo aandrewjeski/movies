@@ -1,0 +1,19 @@
+<h3>Songs</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Song</th>
+      <th>Position</th>
+    </tr>
+  </thread>
+
+  <tbody>
+    <% @songs.each do |song| %>
+      <tr>
+        <td><a href="#"><% song[:title] %></td>
+        <td><% song[:position] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+
+</table>
